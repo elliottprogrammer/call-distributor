@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Create Schema
+// User Schema
 const UserSchema = new Schema({
     name: {
         type: String,
@@ -13,6 +13,7 @@ const UserSchema = new Schema({
     },
     role: {
         type: String,
+        enum: ['admin', 'dro', 'reg', 'spectator'],
         default: 'spectator'
     },
     password: {
