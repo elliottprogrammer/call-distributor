@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header" class="bg-primary-blue text-white py-3">
+            <div class="header-sidebar"></div>
+            <div class="header-title">
+                <div>
+                    <a href="#" class="menu-btn"><i class="menu-icon fas fa-bars"></i></a>
+                    <span class="app-name">Phone Call Distributor</span>
+                </div>
+            </div>
+            <div class="header-user">
+                <div class="user-info">
+                    <a href="#" class="user-toggle">
+                        <div class="user-profile"><i class="fas fa-user-circle"></i></div>
+                        <div class="user-desc">
+                            <div class="user-name">Bryan Elliott</div>
+                            <div class="user-role">Admin User</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div id="page-body">
+            <div id="sidebar">
+                <nav id="sidebar-nav">
+                    <ul class="list-unstyled">
+                        <li><a href=""><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+                        <li><a href=""><i class="fas fa-user-edit"></i> <span>Reaches</span></a></li>
+                        <li><a href=""><i class="fas fa-user-friends"></i> <span>Users</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="main" class="Dashboard">
+                <div class="container-fluid bg-white">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item active">Overview</li>
+                    </ol>
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <i class="fas fa-table"></i> Today's Reaches
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead class="thead-light">
+                                        <tr>
+                                        <th scope="col">Date/Time</th>   
+                                        <th scope="col">Name</th>
+                                        <th scope="col">For</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Source</th>
+                                        <th scope="col">Assigned To</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <th scope="row">2/23 - 9:33a</th>
+                                        <td>Mark</td>
+                                        <td>Self</td>
+                                        <td>Dro</td>
+                                        <td>AB</td>
+                                        <td>Queue</td>
+                                        </tr>
+                                        <tr>
+                                        <th scope="row">2/23 - 9:21a</th>
+                                        <td>Nancy</td>
+                                        <td>Daughter</td>
+                                        <td>Chat</td>
+                                        <td>SS</td>
+                                        <td>Dan</td>
+                                        </tr>
+                                        <tr>
+                                        <th scope="row">2/23 - 9:03a</th>
+                                        <td>Jeremy</td>
+                                        <td>Brother</td>
+                                        <td>Dro</td>
+                                        <td>CL</td>
+                                        <td>Brett</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div> <!-- /.container -->
+                </div> <!-- /#main -->
+           </div>
+       </div>
+       <footer id="footer" class="bg-primary-blue py-4">
+            <p class="text-center mb-0"><small>&copy; 2019 | Phone Call Distribution App | Ver 0.0.1</small></p>
+       </footer>
+   </div> 
+</body>
+</html>
