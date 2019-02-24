@@ -4,8 +4,11 @@
   "description": "Phone call distribution application",
   "main": "server.js",
   "scripts": {
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
     "start": "node server.js",
-    "watch": "nodemon server.js"
+    "watch": "nodemon server.js",
+    "dev": "concurrently \"npm run watch\" \"npm run client\""
   },
   "author": "Bryan Elliott",
   "license": "MIT",
@@ -20,6 +23,7 @@
     "validator": "^10.11.0"
   },
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "nodemon": "^1.18.10"
   }
 }
