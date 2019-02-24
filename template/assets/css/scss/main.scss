@@ -147,6 +147,14 @@ a.user-toggle {
     }
 }
 
+.card-header h4 {
+    margin-bottom: 0;
+}
+.card-header.with-link {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Helpers */
 #main.Dashboard {
     background-color: white;
