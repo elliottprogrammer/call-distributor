@@ -20,7 +20,7 @@ $header-gradient2: #003797;
     }
     .header-title {
         flex: 1;
-        padding-left: .6rem;
+        padding: .25rem 0 .31rem .6rem;
         color: #a2bed6;
         > div {
             display: flex;
@@ -36,13 +36,7 @@ $header-gradient2: #003797;
     padding-top: 15px;
     padding-bottom: 15px;
 }
-#sidebar {
-    background-color: #142B52;
-    width: 60px;
-    @media (min-width: 990px) {
-        width: 225px;
-    }
-}
+
 #footer {
     @include horizontal-gradient($header-gradient1, $header-gradient2);
     color: #9098ad;
@@ -52,7 +46,12 @@ $header-gradient2: #003797;
 }
 
 .menu-btn {
+    background-color: transparent;
+    border: none;
     color: #a2bed6;
+    &:hover {
+        color: #fff;
+    }
 }
 .menu-icon {
     font-size: 1.3rem;
@@ -73,7 +72,13 @@ a.user-toggle {
         text-decoration: none;
     }
     &:after {
-
+        content: '\f0d7';
+        font-family: "Font Awesome 5 free";
+        font-weight: 900;
+        display: inline-block;
+        @media (min-width: 480px) {
+            align-self: baseline;
+        }  
     }
 }
 .user-profile {
@@ -84,6 +89,7 @@ a.user-toggle {
 }
 .user-desc {
     display: none;
+    padding-right: 7px;
     > div {
         line-height: 1;
     }
@@ -115,6 +121,13 @@ a.user-toggle {
             }
         }
         
+    }
+}
+#sidebar {
+    background-color: #142B52;
+    width: 60px;
+    @media (min-width: 990px) {
+        width: 225px;
     }
 }
 
