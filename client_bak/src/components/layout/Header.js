@@ -78,7 +78,7 @@ class Header extends Component {
   }
 }
 
-Header.propTypes = {
+Header.PropTypes = {
   logoutUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
 };
